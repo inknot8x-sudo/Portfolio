@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css" type="text/css">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#acerca">Acerca de mí</a></li>
+            <li><a href="#proyectos">Proyectos y experiencia</a></li>
+            <li><a href="#contacto">Contáctame</a></li>
+        </ul>
+    </nav>
+    <div id="scroll-indicador">
+        <div id="scroll-bar"></div>
+    </div>
+</head>
+<body>
+    <section id="inicio" class="inicio">
+        <div class="imagen">
+            <img src="archivos/Mi_foto.png" alt="Mi_foto.png">
+        </div>
+        <div class="contenido-inicio">
+            <h1>Hola, soy <span id="typed-text"></span></h1>
+            <h2>Desarrollador Web y Estudiante de Ingienería de la Ciberseguridad</h2>
+            <p>Bienvenido a mi portfolio profesional. Aquí encontrarás información sobre mí, mis proyectos, y experiencia en el mundo de las tecnologías.</p>
+            <br>
+            <a href="#proyectos" class="btn">Ver mis proyectos</a>
+        </div>
+    </section>
+
+    <section id="acerca" class="acerca">
+        <div class="contenedor">
+            <h2>Acerca de mí</h2>
+            <p>Soy <strong>Alejandro Martínez Begines</strong>, un apasionado del desarrollo web y la ciberseguridad. Me gusta crear soluciones innovadoras, aprender nuevas tecnologías y mejorar constantemente mis habilidades.</p>
+
+            <div class="habilidades">
+
+            <h3>Mis habilidades</h3>
+
+                    <div class="barra">
+                        <p>HTML5</p>
+                        <div class="progreso"><span data-ancho="90%"></span></div>
+                    </div>
+
+                    <div class="barra">
+                        <p>CSS3</p>
+                        <div class="progreso"><span data-ancho="85%"></span></div>
+                    </div>
+
+                    <div class="barra">
+                        <p>JavaScript</p>
+                        <div class="progreso"><span data-ancho="85%"></span></div>
+                    </div>
+
+                    <div class="barra">
+                        <p>Git & GitHub</p>
+                        <div class="progreso"><span data-ancho="60%"></span></div>
+                    </div>
+
+                    <div class="barra">
+                        <p>Linux</p>
+                        <div class="progreso"><span data-ancho="80%"></span></div>
+                    </div>
+
+                    <div class="barra">
+                        <p>Parrot</p>
+                        <div class="progreso"><span data-ancho="95%"></span></div>
+                    </div>
+
+                    <div class="barra">
+                        <p>Docker</p>
+                        <div class="progreso"><span data-ancho="40%"></span></div>
+                    </div>
+                    
+                    <div class="barra">
+                        <p>Java</p>
+                        <div class="progreso"><span data-ancho="75%"></span></div>
+                    </div>
+
+                    <div class="barra">
+                        <p>PHP</p>
+                        <div class="progreso"><span data-ancho="80%"></span></div>
+                    </div>
+
+                    <div class="barra">
+                        <p>Wordpress</p>
+                        <div class="progreso"><span data-ancho="90%"></span></div>
+                    </div>
+
+                    <div class="barra">
+                        <p>AWS</p>
+                        <div class="progreso"><span data-ancho="35%"></span></div>
+                    </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="proyectos" class="proyectos">
+        <div class="contenedor">
+            <h2>Proyectos y Experiencia</h2>
+
+            <br>
+            <br>
+
+            <div class="grid-proyectos">
+            <!-- Proyecto 1 -->
+            <div class="card">
+                <img src="archivos/portfolioo.png" alt="Proyecto 1">
+                <div class="card-contenido">
+                <h3>Portfolio Personal</h3>
+                <p>Mi sitio web personal hecho con HTML, CSS y JavaScript. En el cual hablo de mí, proyectos, experiencia y mis contactos.</p>
+                <p><em>(Proyecto)</em></p>
+                <a href="https://github.com/inknot8x-sudo" target="_blank" class="btn">Ver en GitHub</a>
+                </div>
+            </div>
+
+            <!-- Proyecto 2 -->
+            <div class="card">
+                <img src="archivos/hacker.webp" alt="Proyecto 2">
+                <div class="card-contenido">
+                <h3>Herramienta de Reconocimiento</h3>
+                <p>Este proyecto fue desarrollado en Python con el objetivo de facilitar tareas de reconocimiento a la hora de realizar una auditoría web. La tarea de esta herramienta consiste en un escaneo de subdominios.</p>
+                <p><em>(Proyecto)</em></p>
+                <a href="https://github.com/inknot8x-sudo/subdomain-recon" class="btn">Ver Herramienta</a>
+                </div>
+            </div>
+
+            <!-- Proyecto 3 -->
+            <div class="card">
+            <img src="archivos/dev.png" alt="Proyecto 3">
+                <div class="card-contenido">
+                    <h3>Tienda de móviles</h3>
+                    <p>Colaboré en el desarrollo de la web de una tienda de móviles, 
+                    trabajando en carrito de compras, PHP, WordPress y más.</p>
+                    <p><em>(Experiencia)</em></p>
+                    <a href="#" class="btn" onclick="abrirModal('modal-experiencia', event)">Ver más</a>
+                </div>
+            </div>
+
+            <div id="modal-experiencia" class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar" onclick="cerrarModal('modal-experiencia')">&times;</span>
+                <h3>Tienda de móviles</h3>
+                <ul>
+                <li>Carrito de compras en JavaScript.</li>
+                <li>Funciones con PHP.</li>
+                <li>Sistema de correo SMTP con PHP.</li>
+                <li>Despliegue de tienda con WordPress.</li>
+                <li>Calendario de gestión de llamadas y compras.</li>
+                <li>Ideas para marketing.</li>
+                <br>
+                <p>Y muchas más tareas...</p>
+                </ul>
+                <br>
+                <p>El proyecto no se finalizó ya que mi periodo de prácticas terminó.</p>
+            </div>
+            </div>
+        </div>
+        </div>
+        </section>
+
+        <section id="contacto" class="contacto">
+            <div class="contenedor">
+                <h2>Contáctame</h2>
+                <p>¿Quieres ponerte en contacto conmigo? Rellena el formulario o escríbeme a mis redes.</p>
+
+                <form id="form-contacto">
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                <input type="email" id="email" name="email" placeholder="Tu email" required>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+                <button type="submit" class="btn">Enviar</button>
+                </form>
+
+                <div class="redes">
+                    <button class="btn" id="copiar-email">
+                        <i class="fa-regular fa-copy"></i> Copiar email
+                    </button>
+
+                    <a class="btn" href="https://www.linkedin.com/in/alejandro-martinez-begines-2884a029b/" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-linkedin"></i> LinkedIn
+                    </a>
+
+                    <a class="btn" href="https://github.com/inknot8x-sudo" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+
+                </div>
+
+                    <div id="toast">¡Correo copiado al portapapeles!</div>
+
+            </div>
+        </section>
+
+
+
+
+
+
+    <script>
+        const texto = "Alejandro Martínez Begines";
+        let i=0;
+
+        function escribir() {
+            if (i < texto.length) {
+                document.getElementById("typed-text").innerHTML += texto.charAt(i);
+                i++;
+                setTimeout(escribir, 100);
+            }
+        }
+        window.onload = escribir;
+
+
+        // ==== SCROLL SUAVE ====
+
+        document.querySelectorAll('nav a').forEach(enlace => {
+        enlace.addEventListener('click', function(e) {
+            e.preventDefault();
+            const seccion = document.querySelector(this.getAttribute('href'));
+            seccion.scrollIntoView({ behavior: 'smooth' });
+        });
+        });
+
+        // ==== MARCAR LINK ACTIVO SEGÚN SECCIÓN ====
+
+        const secciones = document.querySelectorAll("section");
+        const enlaces = document.querySelectorAll("nav a");
+
+        window.addEventListener("scroll", () => {
+        let actual = "";
+        secciones.forEach(seccion => {
+            const top = window.scrollY;
+            const offset = seccion.offsetTop - 100;
+            const height = seccion.offsetHeight;
+            if (top >= offset && top < offset + height) {
+            actual = seccion.getAttribute("id");
+            }
+        });
+
+        enlaces.forEach(a => {
+            a.classList.remove("active");
+            if (a.getAttribute("href") === "#" + actual) {
+            a.classList.add("active");
+            }
+        });
+        });
+
+        // ==== ANIMACIÓN DE BARRAS DE HABILIDADES ====
+
+        const barras = document.querySelectorAll(".progreso span");
+
+        const mostrarBarras = (entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+            const span = entry.target;
+            span.style.width = span.getAttribute("data-ancho");
+            }
+        });
+        };
+
+        const observer = new IntersectionObserver(mostrarBarras, {
+        threshold: 0.5
+        });
+
+        barras.forEach(barra => observer.observe(barra));
+
+        // ==== ANIMACIONES DE ENTRADA ====
+
+        const seccionesAnim = document.querySelectorAll("section");
+
+        const mostrarSeccion = (entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            }
+        });
+        };
+
+        const observer2 = new IntersectionObserver(mostrarSeccion, {
+        threshold: 0.2
+        });
+
+        seccionesAnim.forEach(seccion => observer2.observe(seccion));
+
+        function abrirModal(id, e) {
+            if (e) e.preventDefault();
+            document.getElementById(id).style.display = "flex";
+        }
+
+            function cerrarModal(id) {
+            document.getElementById(id).style.display = "none";
+        }
+
+        document.getElementById("form-contacto").addEventListener("submit", function(e) {
+        e.preventDefault();
+        alert("¡Gracias por contactarme, " + document.getElementById("nombre").value + "! Te responderé pronto.");
+        this.reset();
+        });
+
+
+        document.getElementById('copiar-email').addEventListener('click', () => {
+            const correo = 'amb0055@alu.medac.es'; 
+            navigator.clipboard.writeText(correo).then(() => {
+                const toast = document.getElementById('toast');
+                toast.classList.add('show');
+                setTimeout(() => {
+                toast.classList.remove('show');
+                }, 2500); 
+            });
+        });
+
+        // ==== INDICADOR DE SECCIÓN ====
+        window.addEventListener("scroll", () => {
+            const secciones = document.querySelectorAll("section");
+            const scrollBar = document.getElementById("scroll-bar");
+            const totalSecciones = secciones.length;
+            let indexActivo = 0;
+
+            secciones.forEach((sec, i) => {
+                const rect = sec.getBoundingClientRect();
+                if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+                indexActivo = i;
+                }
+            });
+
+            // calcula altura proporcional
+            const altura = ((indexActivo + 1) / totalSecciones) * 100;
+            scrollBar.style.height = altura + "%";
+        });
+
+
+
+
+    </script>
+</body>
+
+<footer class="footer">
+  <div class="contenedor-footer">
+    <p>&copy; 2025 Alejandro Martínez Begines — Todos los derechos reservados</p>
+    <p>Desarrollado con <span class="corazon">❤️</span> en HTML, CSS y JavaScript</p>
+    <div class="footer-redes">
+      <a href="https://github.com/inknot8x-sudo" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/alejandro-martinez-begines-2884a029b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+  </div>
+</footer>
+
