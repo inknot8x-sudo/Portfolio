@@ -525,11 +525,22 @@ body {
   color: #008891;
 }
 
-/* ==== Responsive ==== */
+@media (max-width: 1024px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+}
+
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
     gap: 10px;
+    background: #111;
+    padding: 10px 0;
   }
 
   .contenido-inicio {
@@ -537,16 +548,48 @@ body {
     text-align: center;
   }
 
-  .contenido-inicio .imagen {
-    margin-top: 20px;
+  .contenido-inicio img {
+    max-width: 180px;
+    margin: 20px auto 0;
   }
 
   .grid-proyectos {
     grid-template-columns: 1fr;
   }
 
-  .habilidades ul {
+  .barra {
+    margin-bottom: 15px;
+  }
+
+  form input, form textarea, form button {
+    width: 100%;
+  }
+
+  .footer-redes {
     flex-direction: column;
-    align-items: center;
+    gap: 10px;
   }
 }
+
+@media (max-width: 480px) {
+  h1, h2, h3 {
+    font-size: 1.2rem;
+  }
+
+  nav ul {
+    font-size: 0.9rem;
+  }
+
+  .contenido-inicio img {
+    max-width: 140px;
+  }
+
+  .grid-proyectos {
+    gap: 20px;
+  }
+
+  .footer {
+    font-size: 0.8rem;
+  }
+}
+
