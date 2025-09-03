@@ -528,6 +528,7 @@ body {
 @media (max-width: 1024px) {
   body {
     font-size: 0.95rem;
+    overflow-x: hidden;
   }
 
   nav ul {
@@ -536,6 +537,10 @@ body {
 }
 
 @media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
   nav ul {
     flex-direction: column;
     gap: 10px;
@@ -546,34 +551,35 @@ body {
   .contenido-inicio {
     flex-direction: column;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
   }
 
   .contenido-inicio h1,
   .contenido-inicio h2 {
-    font-size: 1.5rem;
-    line-height: 1.3;
+    font-size: 1.3rem;
+    line-height: 1.2;
     word-break: break-word;
   }
 
   .contenido-inicio p {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    margin-top: 15px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-top: 12px;
   }
 
   .contenido-inicio img {
-    max-width: 160px;
-    margin: 20px auto 0;
+    max-width: 120px;
+    margin: 15px auto 0;
     display: block;
   }
 
   .grid-proyectos {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .barra {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
   }
 
   form input,
@@ -589,35 +595,39 @@ body {
 }
 
 @media (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+
   h1,
   h2,
   h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   nav ul {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 
   .contenido-inicio h1,
   .contenido-inicio h2 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .contenido-inicio p {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 
   .contenido-inicio img {
-    max-width: 140px;
+    max-width: 100px;
   }
 
   .grid-proyectos {
-    gap: 20px;
+    gap: 15px;
   }
 
   .footer {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 }
 
