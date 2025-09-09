@@ -85,7 +85,7 @@ nav ul li a:hover {
     justify-content: center;
     text-align: center;
     padding: 0 40px;
-    border-radius: 20%;
+    border-radius: 10%;
 }
 
 img {
@@ -239,7 +239,7 @@ section.visible {
 }
 
 .card img {
-  width: 40%;
+  width: 60%;
   height: auto;
   object-fit: contain;
 }
@@ -351,7 +351,7 @@ section.visible {
 
 /* ==== CONTACTO ==== */
 .contacto {
-  padding: 100px 20px;
+  padding: 100px 70px;
   background: #1e1e1e;
   color: white;
   text-align: center;
@@ -359,6 +359,7 @@ section.visible {
 
 .contacto h2 {
   font-size: 2.5rem;
+  margin-top: auto;
   margin-bottom: 20px;
   color: #00adb5;
 }
@@ -642,11 +643,11 @@ body {
 }
 
 .imagen img {
-  width: 220px;
-  height: 220px;
-  border-radius: 20%;
+  width: 300px;
+  height: 300px;
+  border-radius: 3%;
   object-fit: cover;
-  border: 3px solid #00adb5;
+  border: 3px solid #509ca1;
 }
 
 .contenido-inicio {
@@ -716,3 +717,6 @@ body {
   }
 }
 
+.aviso {
+  font-size: 15px;
+}

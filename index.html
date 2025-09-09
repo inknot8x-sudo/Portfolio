@@ -92,6 +92,11 @@
                         <p>AWS</p>
                         <div class="progreso"><span data-ancho="35%"></span></div>
                     </div>
+
+                    <div class="barra">
+                        <p>Node.js</p>
+                        <div class="progreso"><span data-ancho="75%"></span></div>
+                    </div>
             </div>
 
         </div>
@@ -109,10 +114,10 @@
             <div class="card">
                 <img src="img/portfolioo.png" alt="Proyecto 1">
                 <div class="card-contenido">
-                <h3>Portfolio Personal</h3>
-                <p>Mi sitio web personal hecho con HTML, CSS y JavaScript. En el cual hablo de mí, proyectos, experiencia y mis contactos.</p>
-                <p><em>(Proyecto)</em></p>
-                <a href="https://github.com/inknot8x-sudo/Portfolio" target="_blank" class="btn">Ver en GitHub</a>
+                    <h3>Portfolio Personal</h3>
+                    <p>Mi sitio web personal hecho con HTML, CSS y JavaScript. En el cual hablo de mí, proyectos, experiencia y mis contactos.</p>
+                    <p><em>(Proyecto)</em></p>
+                    <a href="https://github.com/inknot8x-sudo/Portfolio" target="_blank" class="btn">Ver en GitHub</a>
                 </div>
             </div>
 
@@ -120,16 +125,16 @@
             <div class="card">
                 <img src="img/hacker.webp" alt="Proyecto 2">
                 <div class="card-contenido">
-                <h3>Herramienta de Reconocimiento</h3>
-                <p>Este proyecto fue desarrollado en Python con el objetivo de facilitar tareas de reconocimiento a la hora de realizar una auditoría web. La tarea de esta herramienta consiste en un escaneo de subdominios.</p>
-                <p><em>(Proyecto)</em></p>
-                <a href="https://github.com/inknot8x-sudo/subdomain-recon" class="btn">Ver Herramienta</a>
+                    <h3>Herramienta de Reconocimiento</h3>
+                    <p>Este proyecto fue desarrollado en Python con el objetivo de facilitar tareas de reconocimiento a la hora de realizar una auditoría web. La tarea de esta herramienta consiste en un escaneo de subdominios.</p>
+                    <p><em>(Proyecto)</em></p>
+                    <a href="https://github.com/inknot8x-sudo/subdomain-recon" class="btn">Ver Herramienta</a>
                 </div>
             </div>
 
             <!-- Proyecto 3 -->
             <div class="card">
-            <img src="img/dev.png" alt="Proyecto 3">
+                <img src="img/dev.png" alt="Proyecto 3">
                 <div class="card-contenido">
                     <h3>Tienda de móviles</h3>
                     <p>Colaboré en el desarrollo de la web de una tienda de móviles, 
@@ -140,23 +145,34 @@
             </div>
 
             <div id="modal-experiencia" class="modal">
-            <div class="modal-contenido">
-                <span class="cerrar" onclick="cerrarModal('modal-experiencia')">&times;</span>
-                <h3>Tienda de móviles</h3>
-                <ul>
-                <li>Carrito de compras en JavaScript.</li>
-                <li>Funciones con PHP.</li>
-                <li>Sistema de correo SMTP con PHP.</li>
-                <li>Despliegue de tienda con WordPress.</li>
-                <li>Calendario de gestión de llamadas y compras.</li>
-                <li>Ideas para marketing.</li>
-                <br>
-                <p>Y muchas más tareas...</p>
-                </ul>
-                <br>
-                <p>El proyecto no se finalizó ya que mi periodo de prácticas terminó.</p>
+                <div class="modal-contenido">
+                    <span class="cerrar" onclick="cerrarModal('modal-experiencia')">&times;</span>
+                    <h3>Tienda de móviles</h3>
+                    <ul>
+                    <li>Carrito de compras en JavaScript.</li>
+                    <li>Funciones con PHP.</li>
+                    <li>Sistema de correo SMTP con PHP.</li>
+                    <li>Despliegue de tienda con WordPress.</li>
+                    <li>Calendario de gestión de llamadas y compras.</li>
+                    <li>Ideas para marketing.</li>
+                    <br>
+                    <p>Y muchas más tareas...</p>
+                    </ul>
+                    <br>
+                    <p>El proyecto no se finalizó ya que mi periodo de prácticas terminó.</p>
+                </div>
             </div>
+
+            <div class="card">
+                <img src="img/cap.png" alt="Proyecto 3">
+                <div class="card-contenido">
+                    <h3>Web de meteorología</h3>
+                    <p>Desarrollé una web para consultar el clima en tiempo real del lugar en el que se encuentre el usuario. También permite buscar el tiempo en todo el mundo. También cabe destacar que está adaptada para personas con discacidad auditiva.</p>
+                    <p><em>(Proyecto)</em></p>
+                    <a href="https://github.com/inknot8x-sudo/TheWeatherWeb" class="btn">Ver más</a>
+                </div>
             </div>
+
         </div>
         </div>
         </section>
@@ -165,6 +181,7 @@
             <div class="contenedor">
                 <h2>Contáctame</h2>
                 <p>¿Quieres ponerte en contacto conmigo? Rellena el formulario o escríbeme a mis redes.</p>
+                <p class="aviso">No funciona, es para demostrar un input.</p>
 
                 <form id="form-contacto">
                 <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
