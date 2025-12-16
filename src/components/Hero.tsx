@@ -1,6 +1,9 @@
 import './Hero.css'
 
 const Hero = () => {
+  // Base URL para GitHub Pages o desarrollo local
+  const baseUrl = import.meta.env.PROD ? '/Portfolio/' : '/'
+  
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id)
     if (element) {
@@ -47,7 +50,7 @@ const Hero = () => {
               Contacto
             </a>
             <a 
-              href={`${import.meta.env.BASE_URL}cv-alejandro-martinez-begines.pdf`}
+              href={`${baseUrl}cv-alejandro-martinez-begines.pdf`}
               className="btn-secondary"
               download="CV-Alejandro-Martinez-Begines.pdf"
               aria-label="Descargar CV"
