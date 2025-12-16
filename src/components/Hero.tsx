@@ -47,7 +47,7 @@ const Hero = () => {
               Contacto
             </a>
             <a 
-              href="/cv-alejandro-martinez-begines.pdf" 
+              href={`${import.meta.env.BASE_URL}cv-alejandro-martinez-begines.pdf`}
               className="btn-secondary"
               download="CV-Alejandro-Martinez-Begines.pdf"
               aria-label="Descargar CV"

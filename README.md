@@ -53,6 +53,32 @@ Antes de desplegar, actualiza la información de contacto en `src/components/Con
 
 También actualiza los metadatos SEO en `index.html` si es necesario.
 
+## 🚀 Despliegue en GitHub Pages
+
+El proyecto está configurado para desplegarse automáticamente en GitHub Pages.
+
+### Configuración automática (recomendado):
+
+1. **Habilita GitHub Pages en tu repositorio:**
+   - Ve a Settings → Pages
+   - En "Source", selecciona "GitHub Actions"
+
+2. **El workflow se ejecutará automáticamente** cuando hagas push a la rama `main` o `master`
+
+3. Tu portfolio estará disponible en: `https://tu-usuario.github.io/Portfolio/`
+
+### Despliegue manual:
+
+```bash
+# Construir el proyecto
+npm run build
+
+# Los archivos estarán en la carpeta dist/
+# Sube el contenido de dist/ a la rama gh-pages o usa GitHub Pages
+```
+
+**Nota:** Asegúrate de que el nombre del repositorio sea `Portfolio` (con P mayúscula) o actualiza `base: '/Portfolio/'` en `vite.config.ts` con el nombre correcto de tu repositorio.
+
 ## 🎨 Personalización
 
 Los estilos se pueden personalizar modificando las variables CSS en `src/index.css`:
