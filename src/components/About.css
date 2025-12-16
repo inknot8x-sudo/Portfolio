@@ -1,0 +1,29 @@
+.about {
+  background-color: var(--color-bg-light);
+}
+
+.about-content {
+  max-width: 800px;
+}
+
+.about-text p {
+  margin-bottom: var(--spacing-md);
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+.about-highlight {
+  margin-top: var(--spacing-lg);
+  padding: var(--spacing-md);
+  background-color: white;
+  border-left: 4px solid var(--color-primary);
+  border-radius: 0.5rem;
+}
+
+.about-highlight strong {
+  color: var(--color-text);
+  display: block;
+  margin-bottom: var(--spacing-xs);
+}
+
+

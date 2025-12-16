@@ -1,0 +1,20 @@
+.footer {
+  background-color: var(--color-text);
+  color: white;
+  padding: var(--spacing-md) 0;
+  text-align: center;
+  margin-top: var(--spacing-xl);
+}
+
+.footer p {
+  margin: 0.25rem 0;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.95rem;
+}
+
+.footer-note {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+
